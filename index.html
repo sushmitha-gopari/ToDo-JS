@@ -1,0 +1,82 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>To Do List</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <h2>To-Do List <img src="images/icon.png" alt=""></h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Enter Task Here!">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <ul id="list-container">
+                <li class="checked">task 1</li>
+                <li>task 2</li>
+                <li>task 3</li> -->
+            <!-- </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html> --> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alternate Case Converter</title>
+<style>
+    input {
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+    #output {
+        border: 1px solid #ccc;
+        padding: 10px;
+    }
+</style>
+</head>
+<body>
+
+    <div id="container">
+        <div id="horizontal"></div>
+       
+    </div>
+    <div id="vertical"></div>
+
+<script>
+    const sentence = "Printed sentence horizontally and vertically.";
+
+// Horizontal printing
+const horizontalDiv = document.getElementById('horizontal');
+horizontalDiv.textContent = sentence;
+
+console.log(horizontalDiv.textContent)
+
+// Vertical printing
+const verticalDiv = document.getElementById('vertical');
+const sentenceArray = sentence.split(' ');
+sentenceArray.forEach(char => {
+    const charSpan = document.createElement('span');
+    charSpan.textContent = char;
+
+    console.log( verticalDiv.appendChild(charSpan));
+    
+    // verticalDiv.appendChild(verticalDiv);
+  
+});
+</script>
+
+</body>
+</html>
